@@ -1,5 +1,7 @@
 # krisp-live-copilot
 
+[![tests](https://github.com/gkmr/krisp-live-copilot/actions/workflows/tests.yml/badge.svg)](https://github.com/gkmr/krisp-live-copilot/actions/workflows/tests.yml) ![python](https://img.shields.io/badge/python-3.9%20%7C%203.12-blue) ![deps](https://img.shields.io/badge/dependencies-stdlib%20only-brightgreen) [![license](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
+
 A live meeting copilot for Claude Code and Claude Cowork that reads the Krisp desktop app's transcript while the call is still going.
 
 > Unofficial. This project is not affiliated with, endorsed by or supported by Krisp. It reads files and screen text that the Krisp app already puts on your Mac, and it can break whenever Krisp changes how its app works.
