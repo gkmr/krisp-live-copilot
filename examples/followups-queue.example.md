@@ -1,0 +1,4 @@
+- [ ] Draft the offline mode help article for support | I will draft it. (Speaker 1 | 00:09:47) from Zoom meeting - October 12, 2026 2-05-31 PM on 2026-10-12 | due none
+- [ ] Get the technical review of the help article | Dana, can you review the technical part by Friday? (Speaker 1 | 00:09:47) from Zoom meeting - October 12, 2026 2-05-31 PM on 2026-10-12 | due 2026-10-16
+- [ ] Ship the beta with a 20 MB attachment limit and a clear message | Can we ship the beta with a 20 megabyte limit and a clear message? (Speaker 1 | 00:04:15) from Zoom meeting - October 12, 2026 2-05-31 PM on 2026-10-12 | due 2026-11-18
+- [x] Log every sync conflict in the beta | Fine with me if we log every conflict, so we can see the real rate in the beta. (Speaker 3 | 00:01:20) from Zoom meeting - October 12, 2026 2-05-31 PM on 2026-10-12 | due none

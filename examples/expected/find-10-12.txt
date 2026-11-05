@@ -1,0 +1,3 @@
+1. Zoom meeting - October 12, 2026 2-05-31 PM | 24 min | 1670 bytes | match: name
+   Thanks for joining. I'm Alex, I run product for the mobile app. Today is one question: are
+(pin one with live.sh --use <n>; the /krisp-use command does that)

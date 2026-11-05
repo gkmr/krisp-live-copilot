@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./bin/live.sh:*)",
+      "Bash(mkdir -p notes:*)",
+      "Edit(notes/**)",
+      "Read(**)"
+    ],
+    "deny": [
+      "Edit(~/Meetings/**)",
+      "Write(~/Meetings/**)"
+    ]
+  }
+}

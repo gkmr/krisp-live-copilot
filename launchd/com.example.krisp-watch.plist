@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Template LaunchAgent for bin/watch.sh. From the repo folder, fill in the two placeholders and load it:
+    mkdir -p .state
+    sed -e "s#__REPO__#$PWD#g" -e "s#__HOME__#$HOME#g" launchd/com.example.krisp-watch.plist > ~/Library/LaunchAgents/com.example.krisp-watch.plist
+    launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.example.krisp-watch.plist
+  Stop it with: launchctl bootout gui/$(id -u)/com.example.krisp-watch
+  Accessibility (only needed for the fallback read of the Krisp app): macOS asks to trust the program that runs
+  watch.sh. See docs/architecture.md, "Running the watcher", for wrapping it in a small applet so there is one app to trust.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.example.krisp-watch</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>__REPO__/bin/watch.sh</string>
+  </array>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <!-- the folder chosen in Krisp's Local Folder integration (read only) -->
+    <key>KRISP_DIR</key><string>__HOME__/Meetings/Krisp</string>
+  </dict>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>ThrottleInterval</key><integer>30</integer>
+  <key>StandardOutPath</key><string>__REPO__/.state/watch.out</string>
+  <key>StandardErrorPath</key><string>__REPO__/.state/watch.err</string>
+</dict>
+</plist>
